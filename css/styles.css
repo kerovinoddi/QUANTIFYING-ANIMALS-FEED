@@ -39,6 +39,9 @@ h1 {
 
 
   }
+  img{
+    border-radius: 60px;
+  }
   .navigation {
     position: absolute;
     z-index: 999;
