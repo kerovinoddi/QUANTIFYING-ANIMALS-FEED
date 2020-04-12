@@ -56,15 +56,16 @@
           to starve due to presence of insufficient
           feed.The rate at which the grass grows is 10cm afer one week.</p><br>
         <p>25cm is equivalent to 280kg of grass consumed by the animal in a week pre 10m <sup>2</sup></p><br>
-        <p>But the rate at which grass grows is 10cm per week. </p>
+        <p>But the rate at which grass grows is 10cm per week. </p><br>
         <p>If 25cm = 280kgs </p>
-        <p>what about 10cm</p>
-        <p>(10 * 280)/25</p>
+        <p>what about 10cm</p><br>
+        <p>(10 * 280)/25</p><br>
         <p>The production of grass to be consumed is 112kg</p>
-        <p>Looking at this the difference between the consumption rate and production rate will be </p>
-        <p>280kg - 112kg giving us a negative graph in order to solve the problem we need to take positve measures</p><br>
-    
-      Enter consumption weight in kg : <br>
+        <p>Looking at this the difference between the consumption rate and production rate will be </p><br>
+        <p>280kg - 112kg giving us a negative graph in order to solve the problem we need to take positve measures</p>
+        <br>
+
+        <!-- Enter consumption weight in kg : <br>
       <input type="text" id="Text1" name="TextBox1">
       <br>
       Enter Production weight in kg : <br>
@@ -73,7 +74,7 @@
       The difference between consumption and production : <br>
       <input type="text" id="txtresult" name="TextBox3">
       <br>
-      <input type="button" name="clickbtn" value="Display Result" onclick="add_number()"><br><br>
+      <input type="button" name="clickbtn" value="Display Result" onclick="number()"><br><br>
 
     <script type="text/javascript">
       function number() {
@@ -83,23 +84,45 @@
         var result = first_number - second_number;
 
         document.getElementById("txtresult").value = result;
-    </script>
-    <div id="measures">
-      <h1>Measure taken when the output is negative</h1><br><br>
-      <p> For thi reason I would like to advice farmer to carry out the following practices;</p>
-      <ul>
-        <li>supplementary feeding </li><br>
-        <li>Changing the target market</li><br>
-        <li>Changing species or enterprise mix.</li><br>
-        <li> Sowing pasture to fill a feed gap.</li>
-      </ul>
+    </script> -->
+        <div>
+          <h1>Find the difference of consumption over the production</h1><br>
+        </div>
+        Enter consumption weight in kg : <br>
+        <input type="text" id="Text1" name="TextBox1">
+        <br>
+        Enter Production weight in kg : <br>
+        <input type="text" id="Text2" name="TextBox2">
+        <br>
+        The difference between consumption and production : <br>
+        <input type="text" id="txtresult" name="TextBox3">
+        <br>
+        <input type="button" name="clickbtn" value="Display Result" onclick="number()">
+
+        <script type="text/javascript">
+          function number() {
+
+            var first_number = parseInt(document.getElementById("Text1").value);
+            var second_number = parseInt(document.getElementById("Text2").value);
+            var result = first_number - second_number;
+
+            document.getElementById("txtresult").value = result;
+          }
+        </script>
+        <div id="measures">
+          <h1>Measure taken when the output is negative</h1><br><br>
+          <p> For thi reason I would like to advice farmer to carry out the following practices;</p><br>
+          supplementary feeding <br><br>
+          Changing the target market<br><br>
+          Changing species or enterprise mix.<br><br>
+          Sowing pasture to fill a feed gap.
+        </div>
+      </div>
+
+
+
+
     </div>
-    </div>
-
-
-
-
-  </div>
   </div>
   </div>
   <section id="contact">
