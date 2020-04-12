@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Quanyifying feeds</title>
+  <title>Quantifying feeds</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -65,35 +65,16 @@
         <p>280kg - 112kg giving us a negative graph in order to solve the problem we need to take positve measures</p>
         <br>
 
-        <!-- Enter consumption weight in kg : <br>
-      <input type="text" id="Text1" name="TextBox1">
-      <br>
-      Enter Production weight in kg : <br>
-      <input type="text" id="Text2" name="TextBox2">
-      <br>
-      The difference between consumption and production : <br>
-      <input type="text" id="txtresult" name="TextBox3">
-      <br>
-      <input type="button" name="clickbtn" value="Display Result" onclick="number()"><br><br>
-
-    <script type="text/javascript">
-      function number() {
-
-        var first_number = parseInt(document.getElementById("Text1").value);
-        var second_number = parseInt(document.getElementById("Text2").value);
-        var result = first_number - second_number;
-
-        document.getElementById("txtresult").value = result;
-    </script> -->
         <div>
           <h1>Find the difference of consumption over the production</h1><br>
         </div>
-        Enter consumption weight in kg : <br>
-        <input type="text" id="Text1" name="TextBox1">
-        <br>
         Enter Production weight in kg : <br>
         <input type="text" id="Text2" name="TextBox2">
         <br>
+        Enter consumption weight in kg : <br>
+        <input type="text" id="Text1" name="TextBox1">
+        <br>
+        
         The difference between consumption and production : <br>
         <input type="text" id="txtresult" name="TextBox3">
         <br>
@@ -102,9 +83,10 @@
         <script type="text/javascript">
           function number() {
 
-            var first_number = parseInt(document.getElementById("Text1").value);
-            var second_number = parseInt(document.getElementById("Text2").value);
-            var result = first_number - second_number;
+            var production = parseInt(document.getElementById("Text2").value);
+            var consumption = parseInt(document.getElementById("Text1").value);
+           
+            var result = production - consumption;
 
             document.getElementById("txtresult").value = result;
           }
@@ -125,11 +107,13 @@
     </div>
   </div>
   </div>
+  <div class="section-title">
+    <h1>Contact <span class="accent-text">Me</span> For more information</h1><br>
+  </div><br><br>
   <section id="contact">
+    
     <div class="container">
-      <div class="section-title">
-        <h1>Contact <span class="accent-text">Me</span></h1>
-      </div>
+     
 
       <div class="row center-xs center-sm center-md center-lg">
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -139,7 +123,7 @@
               <i class="fas fa-mobile-alt"></i>
               <div class="contact-text">
                 <p>Call</p>
-                <p>+254-7777777</p>
+                <p>+254-714800083</p>
               </div><br>
 
             </div><br>
@@ -173,7 +157,7 @@
       </div>
   </section>
   <footer>
-    <p>Copyright &#169; 2018 . All Rights Reserved.</p>
+    <p id="foot">Copyright &#169; 2018 . All Rights Reserved.</p>
   </footer>
 </body>
 
