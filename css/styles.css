@@ -30,7 +30,6 @@ h1 {
     flex: 1%;
     float: left;
     width: 10%;
-	
 	margin: 70px;
     padding: 90px;
     border-radius: 10%;
@@ -90,15 +89,23 @@ h1 {
     padding: 0 20px;
   }
   
-  .menu-item.selected {
-    background-color: royalblue;
+  .menu-item {
+    background-color: rgb(8, 8, 8);
   }
   #contact {
-    background: #f8f9fa; }
+    background: #f8f9fa;
+    border-radius: 30px;
+   }
   
   .contact-block {
-    height: 50px;
-    margin-bottom: 150px; }
+    height: 5px;
+    margin-bottom: 15px;
+   }
+   #measures{
+     display: block;
+     display:flexbox;
+
+   }
     
   
  
@@ -133,7 +140,7 @@ h1 {
     font-size: 1.2em;
     background: #f8f9fa;
     border: 1px #a3a3a3 solid;
-    color: #a3a3a3; }
+    color: #e23737; }
   
   #contact-submit {
     padding: 10px;

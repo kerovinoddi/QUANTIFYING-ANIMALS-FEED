@@ -6,56 +6,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <title>Document</title>
 </head>
 
 <body>
-  <navigation class="navigation">
-    <h1>G.K <i>Portfolio</i></h1>
+  <div class="navigation">
     <ul class="menu">
-      <li><a class="menu-item selected" href="#home">Home</a></li>
+      <li><a class="menu-item" href="#home">Home</a></li>
       <li><a class="menu-item" href="#about">About</a></li>
       <li><a class="menu-item" href="#contact">Contact</a></li>
     </ul>
-  </navigation>
+  </div>
   <div id="home">
-  <div class="row">
+    <div class="row">
 
-    <div class="column">
-      <div class="col-md-2 col-xs-5">
-        <h1>Log company</h1>
-        <img src="image/ker.jpg" height="160" width="160" alt="Quantify" >
-        
+      <div class="column">
+        <div class="col-md-2 col-xs-5">
+          <h1>Log company</h1>
+          <img src="image/ker.jpg" height="180" width="180" alt="Quantify">
+
+        </div>
+      </div>
+      <div class="column">
+        <h1><em>WHY QUANTIFY YOUR ANIMALS FEED?</em></h1><br><br>
+        <p>This web page have been developed to help eradicate death of animals over this years the rate at which the
+          animals have been
+          dying is alarming. Due to this reason I sees it wise to come up with measures that will help to conserve our
+          livestock and
+          wild animals.
+        </p><br>
+        <p>The ideology of quantifying animals feed is good and by this just like we budget for our selves we can budget
+          for
+          our wild animals since they earns us income just like domestic animals does.
+        </p><br>
+        <p> For good health animal at home their movements should be restricteted that is their grazing land at home
+          should be devided into paddocks.
+          they should graze rotationally. To do this the following tools are necessary :asckle or apanga.</p>
+      </div>
     </div>
-    </div>
-    <div class="column">
-      <h1><em>WHY QUANTIFY YOUR ANIMALS FEED?</em></h1><br><br>
-      <p>This web page have been developed to help eradicate death of animals over this years the rate at which the
-        animals have been
-        dying is alarming. Due to this reason I sees it wise to come up with measures that will help to conserve our
-        livestock and
-        wild animals.
-      </p>
-      <p>The ideology of quantifying animals feed is good and by this just like we budget for our selves we can budget
-        for
-        our wild animals since they earns us income just like domestic animals does.
-      </p>
-      <p> For good health animal at home their movements should be restricteted that is their grazing land at home
-        should be devided into paddocks.
-        they should graze rotationally. To do this the following tools are necessary :asckle or apanga.</p>
-    </div>
-    </div>
-    
+
 
   </div>
   <div id="about">
-  <div class="row">
-    <div class="column">
-      <h2 style="font-size:medium;">How to quantify.</h>
-      
-      
+    <div class="row">
+      <div class="column">
+        <h2 font-weight:light;>Illustrations</h2>
+
+        <p>The area of a portion of land measures 10m<sup>2</sup>and after sampling the height of grass</p>
+        <p> In a week 280kgs of grass is consumed from a portion stated.It is very clear that the animals will be forced
+          to starve due to presence of insufficient
+          feed.The rate at which the grass grows is 10cm afer one week.</p><br>
+        <p>25cm is equivalent to 280kg of grass consumed by the animal in a week pre 10m <sup>2</sup></p><br>
+        <p>But the rate at which grass grows is 10cm per week. </p>
+        <p>If 25cm = 280kgs </p>
+        <p>what about 10cm</p>
+        <p>(10 * 280)/25</p>
+        <p>The production of grass to be consumed is 112kg</p>
+        <p>Looking at this the difference between the consumption rate and production rate will be </p>
+        <p>280kg - 112kg giving us a negative graph in order to solve the problem we need to take positve measures</p><br>
+    
+      Enter consumption weight in kg : <br>
+      <input type="text" id="Text1" name="TextBox1">
+      <br>
+      Enter Production weight in kg : <br>
+      <input type="text" id="Text2" name="TextBox2">
+      <br>
+      The difference between consumption and production : <br>
+      <input type="text" id="txtresult" name="TextBox3">
+      <br>
+      <input type="button" name="clickbtn" value="Display Result" onclick="add_number()"><br><br>
+
+    <script type="text/javascript">
+      function number() {
+
+        var first_number = parseInt(document.getElementById("Text1").value);
+        var second_number = parseInt(document.getElementById("Text2").value);
+        var result = first_number - second_number;
+
+        document.getElementById("txtresult").value = result;
+    </script>
+    <div id="measures">
+      <h1>Measure taken when the output is negative</h1><br><br>
+      <p> For thi reason I would like to advice farmer to carry out the following practices;</p>
+      <ul>
+        <li>supplementary feeding </li><br>
+        <li>Changing the target market</li><br>
+        <li>Changing species or enterprise mix.</li><br>
+        <li> Sowing pasture to fill a feed gap.</li>
+      </ul>
     </div>
     </div>
+
+
+
+
+  </div>
+  </div>
   </div>
   <section id="contact">
     <div class="container">
@@ -72,92 +117,41 @@
               <div class="contact-text">
                 <p>Call</p>
                 <p>+254-7777777</p>
-              </div>
-            </div>
+              </div><br>
 
-            <div class="contact-block">
-              <i class="far fa-envelope"></i>
-              <div class="contact-text">
-                <p>Email</p>
-                <p>myEmail@gmail.com</p>
-              </div>
-            </div>
+            </div><br>
+          </div><br>
 
-            <div class="contact-block">
-              <i class="fas fa-location-arrow"></i>
-              <div class="contact-text">
-                <p>Address</p>
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <form id="contact-form" onsubmit="submitForm(); return false;">
+              <div class="field">
+                Name<br>
+                <input type="text" id="name" value="" required>
               </div>
-            </div>
+              <div class="field">
+                Email<br>
+                <input type="text" id="email" value="" required>
+              </div>
+              <div class="field">
+                Subject<br>
+                <input type="text" id="subject" value="" required>
+              </div>
+              <div class="field">
+                Message<br>
+                <textarea id="message" rows="10" cols="75" required></textarea>
+              </div>
+              <div class="field">
+                <input type="submit" id="contact-submit" value="Submit Form"><span id="status"></span>
+              </div>
+            </form>
           </div>
-        </div>
 
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-          <form id="contact-form" onsubmit="submitForm(); return false;">
-            <div class="field">
-              Name<br>
-              <input type="text" id="name" value="" required>
-            </div>
-            <div class="field">
-              Email<br>
-              <input type="text" id="email" value="" required>
-            </div>
-            <div class="field">
-              Subject<br>
-              <input type="text" id="subject" value="" required>
-            </div>
-            <div class="field">
-              Message<br>
-              <textarea id="message" rows="10" cols="75" required></textarea>
-            </div>
-            <div class="field">
-              <input type="submit" id="contact-submit" value="Submit Form"><span id="status"></span>
-            </div>
-          </form>
         </div>
-
       </div>
-    </div>
   </section>
-
-
   <footer>
     <p>Copyright &#169; 2018 . All Rights Reserved.</p>
   </footer>
-
-
-
-
-  <!-- <h1>Quantifying animals feeds.</h1>  
-  <p>This web page have been developed to help eradicate death of animals  over this years the rate at which the animals have been
-    dying is alarming. Due to this reason I sees it wise to come up with measures that will help to conserve our livestock and 
-    wild animals. 
-  </p>
-  <p>The ideology of quantifying animals feed is good and by this just like we budget for our selves we can budget for 
-    our wild animals since they earns us income just like domestic animals does.
-  </p>
-  <p> For good health animal at home their movements should be restricteted that is their grazing land at home should be devided into paddocks.
-    they should graze rotationally. To do this the following tools are necessary :asckle or apanga.</p>
-  <h2 style="font-size:medium;">How to quantify.</h>
-    <ol>
-      <li>Select asection in the field that measures (10*10)metres,then.</li>
-      <li>Use transverse method of sampling by collecting grass samples(zigzag method)</li>
-      <li>Measure height of these grasses,then find the average heiht of the grass that you have collected mark this value (x)</li>
-      <li>Release the animals to go and graze and after that recollect some samples and measure there height and find the 
-        average height mark this value(y)</li>
-        <li>Find the difference in heights and record it as a daily height consumption </li>
-       <p> This will make us know what quantity a cow will graze on in adaily basis.Through this knowledge the farmer will know that 
-        even if it is amatter of preparing hay for future use he shall have known what quantity to  keep for the drought </p>  
-        And to animals in parks then institutins respo sible can even irrigate large track of land i.e after
-         estimating the area of land  grazed on by the animals.
-         This will make us preserve the endangered species of animals like the roan antellope.
-         this will also make the animals to be easily accessed by a tourist if atall they were interested in specific animals.
-
-    </ol>-->
-
-
-
-
 </body>
 
 </html>
