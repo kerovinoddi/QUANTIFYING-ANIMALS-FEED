@@ -1,4 +1,4 @@
-* {
+M* {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
@@ -103,7 +103,7 @@ h1 {
   
   .contact-block {
     height: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 100px/;
    }
    #measures{
      display: block;
